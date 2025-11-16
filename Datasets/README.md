@@ -1,12 +1,12 @@
-# Smart Farming Assistant
+# Farmbuddy Assistant
 
-Welcome to the **Smart Farming Assistant** project! This innovative solution leverages advanced technologies such as machine learning and deep learning to assist farmers in making data-driven decisions to optimize crop selection, disease management, and farming practices.
+Welcome to the **Farmbuddy Assistant** project! This AI-powered solution uses machine learning and deep learning to help farmers make data-driven decisions for optimal crop selection, accurate disease detection, and improved farming efficiency.
 
 ## Datasets
-To implement the **Smart Crop Recommendation System** and **Plant Disease Identification** features, we provide three essential datasets:
+To implement the **Smart Crop Recommendation System** and **Plant Disease Identification** features, three essential datasets are provided to support accurate prediction, analysis, and model training:
 
 ### 1. **Crop Recommendation Dataset**
-This dataset is used to train the crop recommendation model that suggests optimal crops based on environmental and soil factors. The dataset includes features such as nitrogen, phosphorous, potassium levels, temperature, humidity, pH, and rainfall, along with the type of crop that best fits these conditions.
+This dataset is used to train the crop recommendation model, which suggests the most suitable crops based on soil and environmental conditions. It includes features such as nitrogen, phosphorous, potassium levels, temperature, humidity, pH, and rainfall, along with the corresponding crop label that best matches these conditions.
 
 - **Dataset Details:**
   - **Size:** 2200 rows
