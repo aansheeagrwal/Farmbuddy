@@ -1,51 +1,65 @@
 <div align="center">
-    <h1>AgriSens : AI-POWERED SMART FARMING ASSISTANT</h1>
+    <h1>AgriSens : Farmbuddy</h1>
 </div>
 
-<div align="center">
-    <h3>Link : https://agrisens.netlify.app/ </h3>
-</div>
 
-![Screenshot 2025-01-22 210034](https://github.com/user-attachments/assets/5b945e7d-bbb0-4463-b06f-681445e102bd)
+<img width="953" height="422" alt="Major 1" src="https://github.com/user-attachments/assets/98028f8e-00ad-48f9-8661-29eb2cce6b02" />
+
 
 
 ## Overview
 
-Smart Farming Assistant is an innovative solution that uses advanced technology to help farmers improve productivity and make better decisions. The platform features a Smart Crop Recommendation system powered by machine learning to suggest optimal crops based on soil nutrients, climate, and historical data. It also includes a Plant Disease Identification tool using convolutional neural networks (CNNs) to accurately diagnose plant diseases from uploaded images, enabling timely intervention. Additional features such as real-time Weather Forecasts, tailored Fertilizer Recommendations based on soil quality and crop requirements, and a Smart Farming Guide for crop management further enhance its value. With a user-friendly web app, farmers can easily access these insights and tools to improve farming practices.
+🌾 FarmBuddy – Smart Farming Assistant
 
-## Research Paper
+FarmBuddy is an AI-powered smart farming system designed to help farmers make informed decisions about crop health, farm monitoring, and environmental analysis.
+It combines IoT sensors, machine learning, real-time dashboards, and automation to simplify modern farming and improve productivity.
 
-> This project is based on the research paper published on IEEE. You can find the paper at the following link:
-
-- [IEEE : Smart Crop Recommendation System with Plant Disease Identification](https://ieeexplore.ieee.org/document/10738975)
-
-- You can view the research paper directly here : [View Paper](https://github.com/ravikant-diwakar/AgriSens/blob/master/IEEE_Paper_Smart_Crop_Recommendation_System_with_Plant_Disease_Identification.pdf)
 
 
 ## Features
 
-- [x] **Smart Crop Recommendation**: Leverages machine learning to suggest the most suitable crops based on soil nutrients, climate, and historical data.
-- [x] **Plant Disease Identification**: Uses convolutional neural networks (CNNs) to accurately detect and classify plant diseases from uploaded images, allowing for timely interventions.
-- [x] **Fertilizer Recommendation**: Offers customized fertilizer recommendations based on soil quality and crop needs to optimize growth and yield.
-- [x] **Today's Weather Forecast**: Delivers real-time weather updates, including temperature and humidity, to help farmers plan their activities effectively.
-- [x] **Smart Farming Guide**: Provides guidance on crop planting schedules and management strategies to maximize productivity based on soil and weather conditions.
-- [x] **User-Friendly Interface**: Features an intuitive platform for farmers to easily input data and receive personalized crop, disease, and fertilizer recommendations.
+- [x] **Smart Crop Recommendation**: Suggests the best crops based on soil nutrients, weather, and past farming patterns using machine learning.
+- [x] **Plant Disease Identification**: Utilizes convolutional neural networks (CNNs) to detect and classify plant diseases from uploaded images, enabling timely and accurate intervention.
+- [x] **Fertilizer Recommendation**: Delivers data-driven fertilizer prescriptions by evaluating soil parameters and crop nutrient demands, ensuring enhanced growth and higher yields.
+- [x] **Today's Weather Forecast**: Supplies real-time meteorological data such as temperature, humidity, and conditions to support informed farm-management decisions.
+- [x] **Smart Farming Guide**: Delivers data-driven recommendations for crop planting timelines and management practices, tailored to soil characteristics and weather patterns.
+- [x] **User-Friendly Interface**: Provides a streamlined, intuitive UI that allows users to input agricultural parameters and obtain tailored insights on crops, diseases, and fertilizers.
 
 
 ## Datasets
 
-The **Smart Farming Assistant** project provides three key datasets: the **Crop Recommendation Dataset** (2200 rows) includes soil and environmental factors such as nitrogen, phosphorous, temperature, humidity, and pH to predict the most suitable crops; the **Plant Disease Identification Dataset** contains 70,295 training and 17,572 validation images covering 38 diseases across 14 crops like Apple, Tomato, and Grape, used to train CNN models for disease detection; and the **Fertilizer Recommendation Dataset** offers data on soil quality and crop needs to provide tailored fertilizer suggestions. These datasets can be accessed via the following links: [Crop Recommendation Dataset](https://github.com/ravikant-diwakar/AgriSens/blob/master/Datasets/Crop_recommendation.csv), [Plant Disease Dataset](https://github.com/ravikant-diwakar/AgriSens/tree/master/Datasets), and [Fertilizer Recommendation Dataset](https://github.com/ravikant-diwakar/AgriSens/blob/master/Datasets/Fertilizer_recommendation.csv).
+The Farmbuddy project utilizes three essential datasets that enable accurate crop prediction, plant disease detection, and fertilizer recommendations.
+
+- [X] Crop Recommendation Dataset (2,200 rows):
+Contains agro-environmental attributes including nitrogen (N), phosphorus (P), potassium (K), temperature, humidity, rainfall, and soil pH. This dataset is used to predict the most suitable crop for given soil and climate conditions.
+
+- [X] Plant Disease Identification Dataset:
+Includes 70,295 training images and 17,572 validation images, covering 38 plant diseases across 14 major crops such as Apple, Tomato, Potato, and Grape. These high-quality leaf images are used to train CNN-based plant disease detection models.
+
+- [X] Fertilizer Recommendation Dataset:
+Provides detailed soil nutrient values and crop-specific requirements to generate optimized and tailored fertilizer suggestions.
+
+## Dataset Links
+
+- [X] Crop Recommendation Dataset (Kaggle):
+https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset
+
+- [X] Plant Disease Dataset (Kaggle):
+https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+
+- [X] Fertilizer Dataset (Kaggle):
+https://www.kaggle.com/datasets/sanchitagholap/crop-and-fertilizer-dataset-for-westernmaharashtra
 
 # 📌 Crop Recommendation Model
 
-The **Crop Recommendation Model** utilizes machine learning algorithms to suggest the most suitable crops for farmers based on environmental and soil factors. By analyzing data such as soil nutrients, temperature, humidity, pH, and rainfall, the model provides tailored crop recommendations to ensure optimal growth and productivity. The model uses seven classification algorithms, with **Random Forest** achieving the highest accuracy of 99.55%. This helps farmers make informed decisions on crop selection, ensuring better yields and efficient farming practices.
+The Crop Recommendation Model leverages advanced machine learning techniques to identify the most suitable crop for a given set of environmental and soil conditions. By analyzing key parameters such as soil nutrient levels (N, P, K), temperature, humidity, pH, and rainfall, the model delivers personalized crop suggestions that help farmers maximize productivity and ensure sustainable farming.
+
+The system was trained and evaluated using seven classification algorithms, and among them, the Random Forest Classifier achieved the best performance with an impressive accuracy of 99.55%.
+This high accuracy ensures that farmers receive reliable, data-driven recommendations, enabling better crop planning, improved yield, and more efficient utilization of resources.
 
 ## Dataset
 
-This dataset consists of **2200 rows** in total.
-**Each row has 8 columns representing Nitrogen, Phosphorous, Potassium, Temperature, Humidity, PH, Rainfall and Label**
-NPK(Nitrogen, Phosphorous and Potassium) values represent the NPK values in the soil. Temperature, humidity and rainfall are the average values of the sorroundings environment respectively. PH is the PH value present in the soil. **The Label column tells us the type of crop that's best suited to grow based on these conditions.
-Label is the value we will be predicting**
+This dataset contains a total of 2200 rows, with 8 columns representing key environmental and soil parameters: Nitrogen, Phosphorous, Potassium, Temperature, Humidity, pH, Rainfall, and Label. The NPK values indicate the nutrient composition of the soil, while temperature, humidity, and rainfall reflect the average environmental conditions. The pH value represents the acidity or alkalinity of the soil. The Label column specifies the crop that is best suited for the given combination of soil nutrients and environmental factors. This Label is the target variable we aim to predict using machine learning.
 
 
 ## Model Architecture
@@ -64,33 +78,16 @@ Each algorithm was trained on a dataset comprising various factors such as soil 
 
 ## Integration
 
-These two models are integrated into the Smart Crop Recommendation System with Plant Disease Identification. This system provides farmers with comprehensive support, offering both crop recommendations based on various factors and precise identification of crop diseases through image analysis. By combining these models, the system enables farmers to make informed decisions, optimize crop selection, and effectively manage plant diseases for sustainable agriculture and enhanced productivity.
-
-## System Architecture
-
-
-> For a visual overview of the architecture, refer to the diagram below:
-
-<details>
-
-<summary>💻 System Architecture</summary>
-
-### System Architecture
-
-![20250124_135249](https://github.com/user-attachments/assets/1c660b6b-5b70-440e-a453-bf802b490bdc)
-
-
-</details>
-
-
-
+These two models are integrated into a unified Farmbuddy System with Plant Disease Identification. Together, they provide farmers with end-to-end agricultural support: the crop recommendation model suggests the most suitable crops based on soil nutrients, environmental conditions, and weather data, while the disease identification model accurately detects plant diseases through image analysis. By combining these capabilities, the system empowers farmers to make informed decisions, choose the right crops, and manage plant diseases effectively, ultimately enhancing productivity and promoting sustainable farming.
 
 
 ## Results
 
-- Seven classification algorithms were evaluated for crop recommendation tasks.
-- The accuracy of each algorithm was assessed, with the Random Forest algorithm achieving the highest accuracy of 99.55%.
-- Table 1 below illustrates the accuracy achieved by each algorithm:
+- Seven different classification algorithms were tested for the crop recommendation task.
+- The performance of each algorithm was evaluated based on accuracy.
+- Among all algorithms, Random Forest achieved the highest accuracy of 99.55%.
+- Random Forest is identified as the most reliable and effective model for predicting suitable crops.
+- Table 1 below presents the accuracy of each algorithm, showing the performance comparison:
 
 > [!IMPORTANT]
 > The Random Forest algorithm achieved the highest accuracy of 99.55% in crop recommendation, making it the most reliable model for this system.
@@ -127,16 +124,16 @@ These two models are integrated into the Smart Crop Recommendation System with P
 
 # 📌Plant Disease Identification Model 
 
-The **Plant Disease Identification Model** utilizes Convolutional Neural Networks (CNN) to accurately identify plant diseases from leaf images. Trained on the **Plant Disease Image Dataset**, which includes 70,295 images in the training set and 17,572 images in the validation set, the model covers 38 different plant disease classes across 14 crops. It detects and classifies diseases such as **Apple Scab**, **Tomato Blight**, and **Powdery Mildew**, offering farmers a reliable tool for early disease detection. 
+The Plant Disease Identification Model uses Convolutional Neural Networks (CNNs) to accurately detect and classify diseases from plant leaf images. It is trained on the Plant Disease Image Dataset, which contains 70,295 training images and 17,572 validation images, covering 38 disease classes across 14 different crops. The model can identify diseases such as Apple Scab, Tomato Blight, Powdery Mildew, and many more. This enables farmers to detect diseases early and take timely action, helping to protect crops and improve yields.
 
 ## Dataset
 
-The **Plant Disease Image Dataset**, used for crop disease identification, consists of 70,295 plant images from the training set and 17,572 images from the validation set, covering a variety of 38 different plant disease classes. The images are standardized to a resolution of 128x128 pixels, and the dataset occupies approximately five gigabytes of storage space.
+The Plant Disease Image Dataset, used for crop disease identification, contains 70,295 training images and 17,572 validation images, representing a total of 38 different plant disease classes. All images are standardized to a resolution of 128×128 pixels to ensure uniformity during model training. The complete dataset occupies approximately 5 GB of storage, making it a comprehensive resource for developing accurate and reliable plant disease detection models.
 
 
 ## Model Architecture
    
-For the Plant Disease Identification Model, a Convolutional Neural Network (CNN) architecture was employed. This CNN model was specifically trained for crop disease identification. Leveraging deep learning techniques, the CNN analyzes images of plant leaves to detect and classify diseases accurately. This model aids farmers in early disease detection and management, contributing to improved crop health and yield.
+The Plant Disease Identification Model is built using a Convolutional Neural Network (CNN) architecture specifically designed for image-based disease detection. The CNN processes leaf images through multiple convolutional, pooling, and dense layers to automatically extract features such as texture, color patterns, and disease spots. By leveraging deep learning, the model learns to differentiate between healthy and diseased leaves with high accuracy. This architecture enables precise disease classification, helping farmers identify issues early and take timely action to protect crop health and maximize yield.
 
 
 ### Key Features:
@@ -180,28 +177,11 @@ Found 17572 files belonging to 38 classes.
 'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
 
 ```
-### Crop Disease Guide
-
-> Follow this link for detailed information on the Crop Disease Guide.
-
-- [x] 📄 [Crop Disease Guide](DISEASE-GUIDE.md)
 
 ### How it Works:
 - The model uses images of plant leaves to detect symptoms of various diseases.
 - It applies CNN-based image classification to identify the correct disease for a given crop.
 
-
-
-| **Example of Diseased image** |
-| ------------------------------|
-| ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/2f230981-13b5-4010-a346-595c90fb6b32) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/4219025a-0319-4b72-847f-b063c06ced0c) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/2ece067b-5f8c-46d6-b05f-d1517aaf62a9) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/cdb08134-7177-4df9-841d-1f9d3f171085) |
-
-| Training and validation (accuracy and loss) CNN |
-|---------------------------------------------|
-| ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/71e95ae9-05df-44dd-8192-133180981113) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/9a11536a-8480-41cd-8099-9c0cec2c2c62) |
-
-
-These results demonstrate the effectiveness of the Smart Crop Recommendation System with Plant Disease Identification in assisting farmers with informed crop selection and disease management, thereby contributing to improved agricultural practices and crop yields.
 
 > [!IMPORTANT]
 > ### System Requirements
@@ -216,46 +196,23 @@ These results demonstrate the effectiveness of the Smart Crop Recommendation Sys
 
 
 
-## 👨‍💻 CONTRIBUTERS
-- [Ravikant Diwakar](https://github.com/ravikant-diwakar)
-- [Amit Kumar](https://github.com/AMITKUMAR7970)
-- [Gaurav Kumar](https://github.com/Gauravkumar1741)
-- Aditya Chaudhary
 
 ## 📷 Screenshots
 
 | Home page | Features | 
 | --------- | --------- |
-| ![Screenshot 2025-03-22 104944](https://github.com/user-attachments/assets/7b3f6f1b-6423-4ee6-ab16-6391846635f5) | ![Screenshot 2025-03-22 105012](https://github.com/user-attachments/assets/58fe884b-2868-4d55-80d9-a3bdf519ece7) |
+<img width="953" height="422" alt="Major 1" src="https://github.com/user-attachments/assets/82c0c76b-dca3-4365-803e-a67c52b1789f" />
+
 
 | Team Members | Contact Us |
 | --------- | --------- |
-| ![Screenshot 2025-03-22 105046](https://github.com/user-attachments/assets/1e15fa2b-afb1-4fa1-b743-a72af6dcd3c1) | ![Screenshot 2025-03-22 105141](https://github.com/user-attachments/assets/f3e6a7ca-9ebd-41c5-88c1-fd6e1f6528e9) |
-
-| Crop Recommendation | Plant Disease Identification |
-| --------- | --------- |
-| ![Screenshot 2025-03-22 105516](https://github.com/user-attachments/assets/b1cedad0-48fc-44e6-8595-93e9795519f5) | ![Screenshot 2025-03-22 110018](https://github.com/user-attachments/assets/af7915e4-be3d-4741-bec6-4a2e49054b3a) | 
-
-| Fertilizer Recommendation | Smart Farming Guide |
-| --------- | --------- |
-| ![Screenshot 2025-03-22 105639](https://github.com/user-attachments/assets/0d526603-15c5-443d-9f6c-cab83596cbe0) | ![Screenshot 2025-03-22 110057](https://github.com/user-attachments/assets/d454ef17-287c-4a0b-bee2-a5085d63a8bb) |
-
-| 📲 | 📲 | 📲 | 📲 |
-| -- | -- | -- | -- |
-| ![Screenshot 2025-03-22 110147](https://github.com/user-attachments/assets/a83eb79b-0c67-4a77-ae20-936ea481a8d4) | ![Screenshot 2025-03-22 110403](https://github.com/user-attachments/assets/ff101e2d-c712-48da-b478-9c3793ace689) | ![Screenshot 2025-03-22 110637](https://github.com/user-attachments/assets/c188d7f7-93ec-42d7-a719-d81c7eec2b59) | ![Screenshot 2025-03-22 110738](https://github.com/user-attachments/assets/91298e33-94ef-4408-b8d8-9d00b3195074) |
+<img width="951" height="422" alt="major8" src="https://github.com/user-attachments/assets/162db94e-810c-4075-a99b-73e997fd61ca" />
+<img width="953" height="425" alt="major9" src="https://github.com/user-attachments/assets/b5ee375d-7265-405c-9749-c4b48e5d37c8" />
 
 
 
 
 
-
-
-
-
-
-## 📧 Contact
-
-If you have any questions or feedback, feel free to reach out to us at [🔗Link](https://agrisens.netlify.app/form/).
 
 ---
 
